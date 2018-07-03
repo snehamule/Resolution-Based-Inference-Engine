@@ -42,7 +42,8 @@ OutPut :   False
 tell (["or", ["not", "a"], "b"])
 tell (["or", ["not", "b"], "c"])
 tell ("a")
-print (ask("c"))
+print (ask("c"))  
+Output : True
 
 ## Run program : <br />
 1. Download code from git  using  git clone .
