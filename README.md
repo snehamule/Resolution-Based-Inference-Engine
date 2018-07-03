@@ -10,7 +10,7 @@ This Program has 3 functions :
 
 1. TELL () Function : Two-Statement Resolution
 2.  Resolve() Function: Resolution Inference Engine
-3. ASK() Function:  CNF Conversion
+3. ASK() Function:  Conjunctive normal form (CNF) Conversion
 
 ## Technology / libraries used: <br />
 Python
@@ -32,18 +32,11 @@ If python is not installed then need to install python:<br />
 python -version
 
 
+
 ## Run program : <br />
 1. Download code from git  using  git clone .
-2. For Process the Data run command 
+2. For test Testcases run command
 ```
-	python process_data.py
+	python test.py
 ```	
-4. To run backpropogation algorithm, run command 
-```
-	python backPropogation_algorithm py
-```
-5. To run same program using scikit learn :
-```
-     python scitkit_learn_backpropogation_algo.py
 
-```
