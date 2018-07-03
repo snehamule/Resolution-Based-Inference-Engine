@@ -8,8 +8,8 @@ def tell(input):
     if(str(input[0]).lower().strip()=='implies'):
             saveInfo.append(["or", ["not", input[1]], input[2]])
     elif(str(input[0]).lower().strip()=='biconditional'):
-        TELL(["implies",input[1], input[2]])
-        TELL(["implies",input[2], input[1]])
+        tell(["implies",input[1], input[2]])
+        tell(["implies",input[2], input[1]])
     else:    
         saveInfo.append(input)
 
