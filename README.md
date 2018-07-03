@@ -27,6 +27,14 @@ If python is not installed then need to install python:<br />
 python -version
 
 ## Output Format 
+
+| Input  					 		| Output 		|
+| --------------------------------------------------------------| --------------------- |
+| resolve (["or", "a", "b", "c"], ["not", "b"])  		| ['or', 'a', 'c'] 	|
+| resolve (["or", "a", "b", "c"], ["or", "b", ["not", "c"]])    | ['or', 'a', 'b']  	|
+| resolve (["or", ["not", "raining"], "wet ground"], "raining") | wet ground 	        |
+| resolve (["or", "a", "b", "c"], ["or", "b", ["not", "c"]])    | ['or', 'a', 'b']  	|
+
 resolve (["or", "a", "b", "c"], ["not", "b"]) = > ['or', 'a', 'c']
 resolve (["or", "a", "b", "c"], ["or", "b", ["not", "c"]])  = >  ['or', 'a', 'b']
 resolve (["or", ["not", "raining"], "wet ground"], "raining") = > wet ground
