@@ -1,5 +1,5 @@
-from pro import TELL,ASK
-'''
+from propositional_logic import TELL,ASK
+
 print (resolve(["or", "a", "b", "c"], ["not", "b"]))
 print (resolve(["or", "a", "b", "c"], ["or", "b", ["not", "c"]]))
 print (resolve(["or", ["not", "raining"], "wet ground"], "raining"))
@@ -15,10 +15,10 @@ TELL("a")
 print(ASK("c"))
 print(ASK("d"))
 CLEAR()
-
+print('---------------------------------')
 
     
-#TEST CASES
+# Test Case 1
 TELL(["P"])
 TELL(["Q"])
 TELL( ['or', ['not', 'P'],'R'])
@@ -26,9 +26,9 @@ TELL(['or', ['not', 'R'],['not', 'S'],'T'])
 TELL(['or', ['not', 'Q'],'S'])
 TELL(['not','V'])
 print(ASK("T"))
-'''
+print('---------------------------------')
 
-#TEST CASES 2
+#Test Case 2
 TELL(['or','P','Q'])
 TELL(['or', 'P','R'])
 TELL(['or', ['not', 'P'],'R'])
@@ -36,11 +36,17 @@ TELL(['or','R','S'])
 TELL(['or','R', ['not', 'Q']])
 TELL(['or', ['not', 'P'],['not','R']])
 print(ASK("R"))
-'''
+print('---------------------------------')
+
+# Test Case 3
+
 print (resolve(["or", ["not", "a"], ["not", "b"], ["not", "c"]],["or", "a", "b", ["not", "d"]]))
 print (resolve("a", ["not", "a"]))
 CLEAR()
-print('----------------------')
+print('---------------------------------')
+
+
+# Test Case 4
 
 TELL(["implies", "a", "b"])
 TELL(["implies", "b", "c"])
@@ -51,10 +57,13 @@ print(ASK(["implies", "d", "a"]))
 CLEAR()
 print('----------------------')
 
+# Test Case 5
+
+
 print (resolve(["or", "a", "b", "c"], ["not", "b"]))
 print (resolve(["or", "a", "b", "c"], ["or", "b", ["not", "c"]]))
 print (resolve(["or", ["not", "raining"], "wet ground"], "raining"))
 print (resolve(["or", "a", "b"], "c"))
 CLEAR()
 print('----------------------')
-'''
+
