@@ -3,9 +3,9 @@ This project  is implementation a propositional logic resolution-based inference
 This is implementation a propositional logic resolution-based inference engine
 This Program has 3 functions : 
 
-1. TELL () Function : Two-Statement Resolution
-2.  Resolve() Function: Resolution Inference Engine
-3. ASK() Function:  Conjunctive normal form (CNF) Conversion
+1. tell () Function : Two-Statement Resolution
+2. resolve() Function: Resolution Inference Engine
+3. ask() Function:  Conjunctive normal form (CNF) Conversion
 
 ## Technology / libraries used: <br />
 Python
