@@ -1,13 +1,10 @@
 '''
 Created on May 16, 2017
-
 @author: Sneha Mule
-
 '''
 
-
 saveInfo=[]
-def TELL(input):
+def tell(input):
     if(str(input[0]).lower().strip()=='implies'):
             saveInfo.append(["or", ["not", input[1]], input[2]])
     elif(str(input[0]).lower().strip()=='biconditional'):
@@ -68,7 +65,7 @@ def resolve(newListOne,newListTwo):
         return False
     
     
-def ASK(input):
+def ask(input):
     saveInfoList=list(saveInfo)
     flag= True
     if((input[0]).lower().strip()!='implies'):
@@ -126,7 +123,7 @@ def ASK(input):
         return False
 
    
-def CLEAR():
+def clear():
     del saveInfo[:]
 
 
