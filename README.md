@@ -26,7 +26,23 @@ If python is not installed then need to install python:<br />
 ## Check python version:
 python -version
 
+## Output Format 
+resolve(["or", "a", "b", "c"], ["not", "b"]) = > ['or', 'a', 'c']
+resolve(["or", "a", "b", "c"], ["or", "b", ["not", "c"]])  = >  ['or', 'a', 'b']
+resolve(["or", ["not", "raining"], "wet ground"], "raining") = > wet ground
+resolve("a", ["not", "a"] =>  []
 
+tell(["or", ["not", "a"], "b"])
+tell(["or", ["not", "b"], "c"])
+tell("a")
+print(ask("d"))
+OutPut :   False
+
+
+tell(["or", ["not", "a"], "b"])
+tell(["or", ["not", "b"], "c"])
+tell("a")
+print(ask("c"))
 
 ## Run program : <br />
 1. Download code from git  using  git clone .
