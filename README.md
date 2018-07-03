@@ -1,8 +1,3 @@
-Language Used : - Python
-Python version : python 3 and above
-
-
-
 # Resolutution Based Inference Engine
 This project  is implementation a propositional logic resolution-based inference engine
 This is implementation a propositional logic resolution-based inference engine
