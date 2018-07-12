@@ -30,14 +30,16 @@ python -version
 
 | Input  					 		| Output 		|
 | --------------------------------------------------------------| --------------------- |
-| resolve (["or", "a", "b", "c"], ["not", "b"])  		| ['or', 'a', 'c'] 	|
+| resolve (["or", "a", "b", "c"], ["not", "b"])  		| ['or', 'a', 'c'] 	
+--------------------------------------------------------------  | --------------------- |
 | resolve (["or", "a", "b", "c"], ["or", "b", ["not", "c"]])    | ['or', 'a', 'b']  	|
 | resolve (["or", ["not", "raining"], "wet ground"], "raining") | wet ground 	        |
 | resolve ("a", ["not", "a"])					| ['or', 'a', 'b']  	|
-| tell (["or", ["not", "a"], "b"])
-  tell (["or", ["not", "b"], "c"])
-  tell ("a")
-  print(ask("d")) | wet ground 	        |
+| tell (["or", ["not", "a"], "b"])				|			|
+| tell (["or", ["not", "b"], "c"])				|			|
+| tell ("a")							|			|
+| print(ask("d")) | wet ground 	        		        |			|
+----------------------------------------------------------------| ----------------------
 | resolve ("a", ["not", "a"])					| ['or', 'a', 'b']  	|
 
 
