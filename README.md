@@ -35,9 +35,9 @@ python -version
 | resolve (["or", ["not", "raining"], "wet ground"], "raining") | wet ground 	        |
 | resolve ("a", ["not", "a"])					| ['or', 'a', 'b']  	|
 | tell (["or", ["not", "a"], "b"])
-tell (["or", ["not", "b"], "c"])
-tell ("a")
-print(ask("d")) | wet ground 	        |
+  tell (["or", ["not", "b"], "c"])
+  tell ("a")
+  print(ask("d")) | wet ground 	        |
 | resolve ("a", ["not", "a"])					| ['or', 'a', 'b']  	|
 
 
