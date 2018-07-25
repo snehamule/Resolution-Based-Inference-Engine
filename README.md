@@ -46,7 +46,7 @@ python -version
 |tell (["or", ["not", "b"], "c"])				|			|
 |tell ("a")							|  True			|
 |print (ask("c"))  						|			|
-|
+
 
 
 
